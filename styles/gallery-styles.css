@@ -1,6 +1,134 @@
+body, html {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    }
+    
+    /* Styles the thumbnail */
+    
+    a.lightbox img {
+    height: 200px;
+    border: 3px solid white;
+    box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+    /*width: 30%;
+    object-fit: contain;*/
+    }
+
 .g-grid {
     display: grid;
-    grid-template-columns: 30% 30% 30%;
-    grid-template-rows: 210px 210px 210px 210px;
+    grid-template-columns: 33% 33% 34%;
+    grid-template-rows: 260px 260px 260px;
+    
     
 }
+
+@media (max-width:900px) {
+    .g-grid {
+        grid-template-columns: 100%;
+        
+    }
+    
+}
+
+nav {
+    margin-bottom: 8rem;
+}
+
+ul, li {
+    list-style-type: none;
+}
+
+h3 {
+    font-size: 2.2rem;
+    margin-top: 0;
+    color: #640b49;
+    text-shadow: 0.5px 0.5px black;
+}
+
+p {
+    position: fixed;
+    color: whitesmoke;
+    text-shadow: 1px 1px black;
+    bottom: 20px;
+    font-size: 3rem;
+    font-weight: bold;
+    background-color: #241e1e;
+    margin: 0;
+    width: 100%;
+    line-height: 6rem;
+}
+
+
+
+/*Eliminates padding, centers the thumbnail */
+
+
+    
+    /* Styles the lightbox, removes it from sight and adds the fade-in transition */
+    
+    .lightbox-target {
+    position: fixed;
+    top: -100%;
+    width: 100%;
+    background: rgba(0,0,0,.7);
+    
+    opacity: 0;
+    -webkit-transition: opacity .5s ease-in-out;
+    -moz-transition: opacity .5s ease-in-out;
+    -o-transition: opacity .5s ease-in-out;
+    transition: opacity .5s ease-in-out;
+    overflow: hidden;
+     
+    }
+    
+    /* Styles the lightbox image, centers it vertically and horizontally, adds the zoom-in transition and makes it responsive using a combination of margin and absolute positioning */
+    
+    .lightbox-target img {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left:0;
+    right:0;
+    bottom: 0;
+    max-height: 0%;
+    max-width: 0%;
+    border: 3px solid white;
+    box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+    box-sizing: border-box;
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+      
+    }
+    
+    /* Styles the close link, adds the slide down transition */
+    
+    a.lightbox-close {
+        content: "";
+        display: block;
+        height: 100%;
+        width: 100%;
+        
+        
+    }
+    
+    
+    
+    /* Uses the :target pseudo-class to perform the animations upon clicking the .lightbox-target anchor */
+    
+    .lightbox-target:target {
+    opacity: 1;
+    top: 0;
+    bottom: 0;
+    left:0;
+    overflow:scroll;
+    }
+    
+    .lightbox-target:target img {
+    max-height: 80%;
+    max-width: 80%;
+    }
+    
+    
+    

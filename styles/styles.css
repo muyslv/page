@@ -8,6 +8,10 @@ html {
     
 }
 
+html::-webkit-scrollbar {
+    display: none;
+}
+
 body {
     height: 100%;
     min-height: 100%;
@@ -81,7 +85,7 @@ nav a:first-child {
     }
 
     .logo {
-        transform: scale(0.5,1) translate(0, -2rem);
+        transform: scale(0.5) translate(0, -6rem);
     }
 
     
@@ -129,7 +133,15 @@ h2 { color: #640b49;
     text-align: center; 
 }
 
+h2 a {
+    color: #640b49; 
+    border-bottom: 3px solid;
+    text-decoration: none;
+}
 
+h2 a:hover, h2 a:focus {
+    color:#9b397d;
+}
 
 
 p { color: #240707; 
