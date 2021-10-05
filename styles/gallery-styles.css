@@ -17,10 +17,11 @@ body, html {
 .g-grid {
     display: grid;
     grid-template-columns: 33% 33% 34%;
-    grid-template-rows: 260px 260px 260px;
+    grid-template-rows: 280px 280px 280px;
     
     
 }
+
 
 @media (max-width:900px) {
     .g-grid {
@@ -30,17 +31,20 @@ body, html {
     
 }
 
-nav {
-    margin-bottom: 8rem;
-}
+
 
 ul, li {
     list-style-type: none;
 }
 
+h1 {
+    margin-bottom: 5rem;
+}
+
 h3 {
-    font-size: 2.2rem;
-    margin-top: 0;
+    font-size: 2.5rem;
+    margin-top: 0.5rem;
+    font-weight: 200;
     color: #640b49;
     text-shadow: 0.5px 0.5px black;
 }

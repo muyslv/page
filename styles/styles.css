@@ -1,10 +1,11 @@
 html {
     /*background-color: aliceblue;*/
     
-    font-family: 'Raleway', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family:  Verdana, sans-serif;
     font-size: 10px;
     height: 100%;
     margin: 0;
+    text-align: center;
     
 }
 
@@ -18,8 +19,8 @@ body {
     margin: 0;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-color: #FBDA61;
-    background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
+    background-color: whitesmoke;
+  /*  background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);*/
     position: relative;
 }
 
@@ -33,43 +34,51 @@ nav {
     background-color: #241e1e;
     margin: 0;
     color: whitesmoke;
-    line-height: 7rem;
+    line-height: 10rem;
     font-size: 2rem;
     font-weight: bold;
     padding-left: 2rem;
+    border-bottom: 1px solid grey;
 }
 
 .logo {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    border: 2px solid whitesmoke;
-    margin: auto;
-   
-    
-    transform: scale(1.2) translate(0px, 2rem);
-}
-
+    transform: scale(0);
+    width:0;}
 nav a {
     text-decoration: none;
     color: whitesmoke;
     margin: auto;   
     max-height: 100px;
+    margin-right: 1rem;
 }
 nav a:first-child {
     margin-left: 2px;
+    text-transform: lowercase;
 }
 
 .n-grid {
     display: grid;
     
-    grid-template-columns: 10% 5% 120px 15% 15% 16% 15%;
+    grid-template-columns: 10% 21% 17% 17% 18% 17%;
 }
 
 @media (min-width: 1200px) {
     .n-grid {
-        grid-template-columns: 10% 20% 40% 7% 7% 8% 8%;
+        grid-template-columns: 10% 53% 9% 9% 10% 9%;
     }
+
+    .logo {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 2px solid grey;
+       
+        position: sticky;
+        
+        
+        transform: scale(1.2) translate(0px, -3.5rem);
+    }
+    
 }
 
 @media (max-width: 580px) {
@@ -78,18 +87,21 @@ nav a:first-child {
     .n-grid {
         line-height: 3rem;
         grid-template-columns:100%;
-        grid-template-rows: 20px 0px 50px;
-
-    }
-    nav a:first-child {
-        margin-top: 1rem;
+        grid-template-rows: 0 0 30px 30px 30px;
+        border-bottom: 1px solid grey;
     }
 
-    .logo {
-        transform: scale(0.5) translate(0, -6rem);
+    nav a{
+        border-bottom: 1px solid grey;
+    }
+
+    nav a:first-child, nav a:last-child {
+        border-bottom: none;
     }
 
     
+    
+
 
 }
 
@@ -119,7 +131,7 @@ h1 {
     font-size: 6.2rem; 
     font-weight: 800; 
     line-height: 72px; 
-    margin: 5rem 0 24px; 
+    margin: 0 0 24px; 
     text-align: center; 
     text-transform: uppercase; 
 }
@@ -137,6 +149,7 @@ h2 { color: #640b49;
 h2 a {
     color: #640b49; 
     border-bottom: 3px solid;
+    
     text-decoration: none;
 }
 
@@ -180,11 +193,18 @@ article {
     padding: 5px;
     width: 50%;
     margin-bottom: 10px;
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 1);
     /*opacity: 40%;*/
     text-align: start;
     border-radius: 10px;
 }
+
+article h2 {
+    text-align: start;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+
 
 @media only screen and (max-width: 580px) {
     article {
