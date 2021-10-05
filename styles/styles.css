@@ -54,7 +54,7 @@ nav a {
 nav a:first-child {
     margin-left: 2px;
     text-transform: lowercase;
-    text-align:left;
+    text-align: left;
 }
 
 .n-grid {
