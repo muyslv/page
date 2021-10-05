@@ -92,7 +92,7 @@ p {
     bottom: 0;
     max-height: 0%;
     max-width: 0%;
-    border: 3px solid white;
+    border: 3px solid whitesmoke;
     box-shadow: 0px 0px 8px rgba(0,0,0,.3);
     box-sizing: border-box;
     -webkit-transition: .5s ease-in-out;
