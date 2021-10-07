@@ -30,37 +30,61 @@ body::after{
     height: 50px;
 }
 
-nav {
-    background-color: #241e1e;
-    margin: 0;
-    color: whitesmoke;
-    line-height: 10rem;
-    font-size: 2rem;
-    font-weight: bold;
-    padding-left: 2rem;
-    border-bottom: 1px solid grey;
+ 
+article {
+    display: block;
+    margin: auto;
+    padding: 5px;
+    width: 50%;
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+    /*opacity: 40%;*/
+    text-align: start;
+    border-radius: 10px;
 }
 
 .logo {
     transform: scale(0);
     width:0;}
-nav a {
+.n-grid a {
     text-decoration: none;
     color: whitesmoke;
     margin: auto;   
     max-height: 100px;
     margin-right: 1rem;
 }
-nav a:first-child {
-    margin-left: 2px;
+.n-grid a:first-child {
+    margin-left: 2rem;
     text-transform: lowercase;
     text-align: left;
 }
 
 .n-grid {
+    background-color: #241e1e;
     display: grid;
-    
+    color: whitesmoke;
+    line-height: 10rem;
+    font-size: 2rem;
+    font-weight: bold;
+    padding-left: 2px;
+    border-bottom: 1px solid grey;
     grid-template-columns: 10% 21% 17% 17% 18% 17%;
+}
+
+footer {
+    background-color: #241e1e;
+    color: whitesmoke;
+        text-align: center;
+        font-size: 1.7rem;
+        line-height: auto;
+        position: absolute;
+        width: 100%;
+    }
+
+footer a, footer a:link, footer a:visited{
+    text-decoration: none;
+    color: whitesmoke;
+    margin: 0 4px;
 }
 
 @media (min-width: 1200px) {
@@ -86,39 +110,59 @@ nav a:first-child {
     
 
     .n-grid {
+        height: 100%;
+        width: 130px;
+        position: fixed;
         line-height: 3rem;
         grid-template-columns:100%;
-        grid-template-rows: 0 0 30px 30px 30px;
+        padding: 0;
+        margin: auto;
+        grid-template-rows: 200px 0 100px 100px 100px 100px;
         border-bottom: 1px solid grey;
-    }
-
-    nav a{
-        border-bottom: 1px solid grey;
-    }
-
-    nav a:first-child, nav a:last-child {
-        border-bottom: none;
-    }
-}
-
-
-
-
-footer {
-    background-color: #241e1e;
-    color: whitesmoke;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        overflow-x: hidden;
         text-align: center;
-        font-size: 1.7rem;
-        line-height: auto;
-        position: absolute;
-        width: 100%;
+        
     }
 
-footer a, footer a:link, footer a:visited{
-    text-decoration: none;
-    color: whitesmoke;
-    margin: 0 4px;
+    .n-grid a{
+        margin: 0;
+        
+        
+        text-align: center;
+    }
+    .n-grid a:first-child{
+        margin: 0;
+        padding-top: 100px;
+        padding: auto;
+        text-align: center;
+    }
+    main {
+        margin-left: 130px;
+        padding: 0px 10px;
+        width: 70%;
+    }
+
+    
+
+    article {
+        margin-left: 140px;
+        width: 65%;
+        padding: 0px 10px;
+    }
+
+    footer {
+       
+        margin-left: 100px;
+    }
 }
+
+
+
+
+
     
 
 h1 { 
@@ -143,7 +187,7 @@ h2 { color: #640b49;
 }
 
 h2 a {
-    color: #640b49; 
+    color: inherit; 
     border-bottom: 3px solid;
     
     text-decoration: none;
@@ -177,18 +221,7 @@ abbr {
 
 
 
- 
-article {
-    display: block;
-    margin: auto;
-    padding: 5px;
-    width: 50%;
-    margin-bottom: 10px;
-    background-color: rgba(255, 255, 255, 0.7);
-    /*opacity: 40%;*/
-    text-align: start;
-    border-radius: 10px;
-}
+
 
 article h2 {
     text-align: start;
@@ -196,12 +229,6 @@ article h2 {
     margin-bottom: 1rem;
 }
 
-
-@media only screen and (max-width: 580px) {
-    article {
-        width: 100%;
-    }
-}
 
 
 
