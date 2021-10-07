@@ -121,7 +121,7 @@ footer a, footer a:link, footer a:visited{
         border-bottom: 1px solid grey;
         z-index: 1;
         top: 0;
-        left: 0;
+        right: 0;
         overflow-x: hidden;
         text-align: center;
         
@@ -135,28 +135,27 @@ footer a, footer a:link, footer a:visited{
     }
     .n-grid a:first-child{
         margin: 0;
-        padding-top: 100px;
+        
         padding: auto;
         text-align: center;
     }
     main {
-        margin-left: 130px;
-        padding: 0px 10px;
+        
+        
         width: 70%;
     }
 
     
 
     article {
-        margin-left: 140px;
+       
         width: 65%;
-        padding: 0px 10px;
+        
     }
 
-    footer {
-       
-        padding-left: 100px;
-    }
+   footer {
+       z-index: 1;
+   }
 }
 
 
