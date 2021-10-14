@@ -1,0 +1,48 @@
+.container {
+    max-width: 100vw;
+}
+.showcase {
+    background-color: var(--primary-color);
+    color: #fff;
+    height: 100%;
+    position: relative;
+    
+}
+@media (min-width:1700px) {
+.showcase .showcase-inner {
+    flex-direction: initial;
+}
+.showcase .showcase-inner h1 {
+    position: fixed;
+    top:50vh;
+    left: 2rem;
+}
+}
+
+
+.showcase::before {
+    background-attachment: fixed;
+    height: 100%;
+}
+
+.image {
+    max-width: 71vw;
+      
+    background: var(--primary-color);
+    padding: 1rem;
+
+    margin: 1rem 0;
+}
+
+.image p {
+    font-size: 2rem;
+    font-weight: 300;
+    padding-bottom: 2px;
+
+}
+
+img {
+    max-width: 100%;
+   
+    border-radius: 1%;
+}
