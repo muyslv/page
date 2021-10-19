@@ -73,7 +73,7 @@
     transform: rotate(90deg); 
 }
 
-/* Rotate on hover shen checked */
+/* Rotate on hover when checked */
 .menu-wrap .toggler:checked:hover + .hamburger > div {
     transform: rotate(225deg);
 }
@@ -138,4 +138,52 @@
     color: inherit;
     text-decoration: none;
     transition: color 0.4s ease;
+}
+
+.nav-full {
+    position: fixed;
+    display: flex;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    z-index: 2;
+}
+
+.nav-full ul {
+    display: inline-flex;
+    list-style: none;
+}
+.nav-full li {
+    margin: 0 1.5rem;
+}
+
+.nav-full a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+@media (min-width: 800px) {
+    .nav-full {
+        visibility: unset;
+        
+        width:initial;
+        height: initial;
+        right: 0;
+        top: 10px;
+    }
+
+    .menu-wrap .toggler {
+        visibility: hidden;
+    }
+    
+    .menu-wrap .hamburger {
+        visibility: hidden;
+    }
+
+    .menu-wrap .toggler:checked ~ .menu {
+        visibility: hidden;
+    }
+
 }
