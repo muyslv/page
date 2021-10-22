@@ -141,7 +141,7 @@
 }
 
 .nav-full {
-    position: fixed;
+    position: absolute;
     display: flex;
     width: 0;
     height: 0;
