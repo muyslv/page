@@ -167,7 +167,7 @@
 @media (min-width: 800px) {
     .nav-full {
         visibility: unset;
-        
+        position: absolute;
         width:initial;
         height: initial;
         right: 0;
