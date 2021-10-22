@@ -12,6 +12,7 @@
 .showcase::before {
     background-attachment: fixed;
     height: 100%;
+   
 }
 
 .showcase h1 {
@@ -20,13 +21,19 @@
     margin-bottom: 4rem;
 }
 
-.image p {
+.image .bottom, .image .top, .image p {
     font-weight: 300;
     font-size: calc(1rem + 1vw);
     font-weight: bold;
     text-align: start;
- 
 }
+
+.image .bottom {
+    position: absolute;
+    visibility: hidden;
+}
+
+
 
 
 img {
@@ -60,7 +67,16 @@ img {
         max-height: 30vw;
         margin-bottom: 0;
     }
-    .image p {
+
+    
+    .image .bottom, .image p {
         font-size: 1.5rem;
+        visibility: visible;
+        position: initial;
+    }
+
+    .image .top {
+        position: absolute;
+        visibility: hidden;
     }
 }
