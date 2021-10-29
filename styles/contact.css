@@ -5,7 +5,9 @@
 }
 
 
-
+.showcase{
+    background: rgb(73,73,73);
+    background: linear-gradient(90deg, rgba(73,73,73,1) 4%, rgba(59,129,144,1) 20%, rgba(0,0,0,1) 50%, rgba(59,129,144,1) 80%, rgba(73,73,73,1) 96%);}
 
 
 .menu-wrap .hamburger {
