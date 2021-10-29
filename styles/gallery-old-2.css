@@ -6,7 +6,7 @@
     color: #fff;
     height: 100%;
     position: relative;
-   
+
 }
 
 .showcase::before {
@@ -26,14 +26,17 @@
     flex-direction: column;
 }
 
-.image p {
+.image .bottom, .image .top, .image p {
     font-weight: 300;
     font-size: calc(1rem + 1vw);
     font-weight: bold;
     text-align: start;
 }
 
-
+.image .bottom {
+    position: absolute;
+    visibility: hidden;
+}
 
 
 
@@ -65,10 +68,6 @@ img {
         display: flex;
         align-items: flex-start;
     }
-
-    .block-2 .image p {
-        order:2;
-    }
     img {
         border-radius: 0;
         width: 31vw;
@@ -80,11 +79,14 @@ img {
     transition: 0.5s ease;
     }
     
-    .image p {
+    .image .bottom, .image p {
         font-size: 1.5rem;
         visibility: visible;
         position: initial;
     }
 
-    
+    .image .top {
+        position: absolute;
+        visibility: hidden;
+    }
 }

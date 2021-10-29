@@ -1,0 +1,47 @@
+:root {
+    --primary-color:black;
+    --overlay-color:rgba(169, 169, 169, 0.9);
+    --menu-speed: 0.75s;
+}
+
+
+
+
+
+.menu-wrap .hamburger {
+    background-color: var(--overlay-color);
+}
+
+.menu-wrap .hamburger > div {
+    background-color: black;
+}
+    
+
+
+.footer {
+    background: var(--overlay-color);
+    color: black;
+}
+.contacts {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-c {
+    
+    
+    border: none;
+    background-color: var(--overlay-color);
+    color: #000;
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    margin: 1rem 5px 0 5px;
+    
+    text-decoration: none;
+    
+    transition: opacity 1s ease-in;
+}
+
+.btn-c:hover {
+    opacity: 0.69;
+}
